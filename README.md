@@ -19,7 +19,7 @@ nginx -s stop
 
 ### Vanilla Counter
 
-확장프로그램 설치([open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser, "open in browser link"))
+확장프로그램 설치([open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser "open in browser link"))
 
 banilla-counter의 index.html 실행(ALT+B)
 
