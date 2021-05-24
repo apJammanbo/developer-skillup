@@ -29,6 +29,53 @@ function onload() {
 // -> undo 버튼 : 결과갑 0 -> undo 버튼 비활성화
 // -> redo 버튼 : 결과갑 1 -> undo 버튼 활성화
 
+let result = [0];
+let currentIndex = 0;
+
 function handleClick(event) {
-  console.log("click");
+  const actionId = event.target.id;
+
+  switch (actionId) {
+    case "addButton":
+    case "subButton":
+      const number = popInputValue();
+      if (number) {
+        addNumber(number * (actionId === "subButton" ? -1 : 1));
+      }
+      break;
+    case "undoButton":
+      currentIndex -= 1;
+      break;
+    case "redoButton":
+      currentIndex += 1;
+      break;
+    default:
+      break;
+  }
+  setDisplay();
+}
+
+function popInputValue() {
+  const inputValue = document.getElementById("inputbox").value;
+  document.getElementById("inputbox").value = "";
+  if (/^[-|1-9][0-9]*$/.test(inputValue)) {
+    const number = Number(inputValue);
+    if (number) {
+      return number;
+    }
+  }
+  alert(`${inputValue}는 유효하지 않습니다.`);
+  return null;
+}
+
+function addNumber(number) {
+  result = result.splice(0, currentIndex + 1);
+  result.push(result[currentIndex] + number);
+  currentIndex += 1;
+}
+
+function setDisplay() {
+  document.getElementById("valuebox").innerText = result[currentIndex];
+  document.getElementById("undoButton").disabled = !(currentIndex > 0);
+  document.getElementById("redoButton").disabled = !(currentIndex < result.length - 1);
 }
