@@ -14,3 +14,29 @@ brew install nginx
 nginx
 nginx -s stop
 ```
+
+## Day 2
+
+### Vanilla Counter
+
+확장프로그램 설치([open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser, "open in browser link"))
+
+banilla-counter의 index.html 실행(ALT+B)
+
+---
+
+### 리액트 맛보기([React](https://ko.reactjs.org/docs/create-a-new-react-app.html, "React link"))
+
+```bash
+npx create-react-app first-react-app
+cd first-react-app
+npm start
+```
+
+Reset CSS 적용
+
+```bash
+npm install reset-css
+```
+
+리액트로 Counter앱 재작성
