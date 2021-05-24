@@ -24,9 +24,10 @@ function onload() {
 // -> 3 입력 후 + : " 결과값 6
 // -> undo 버튼 : 결과값 3
 // -> 4 입력 후 + : 결과값 7
-// -> redo 버튼 : 결과값 3
-// -> redo 버튼 : 결과값 1
-// -> redo 버튼 : 결과갑 0 -> redo 버튼 비활성화
+// -> undo 버튼 : 결과값 3 -> redo 버튼 활성화
+// -> undo 버튼 : 결과값 1
+// -> undo 버튼 : 결과갑 0 -> undo 버튼 비활성화
+// -> redo 버튼 : 결과갑 1 -> undo 버튼 활성화
 
 function handleClick(event) {
   console.log("click");
