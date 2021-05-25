@@ -23,7 +23,7 @@ nginx -s stop
 
 banilla-counter의 index.html 실행(ALT+B)
 
----
+## Day 3
 
 ### 리액트 맛보기([React](https://ko.reactjs.org/docs/create-a-new-react-app.html, "React link"))
 

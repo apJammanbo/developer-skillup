@@ -35,23 +35,17 @@ let currentIndex = 0;
 function handleClick(event) {
   const actionId = event.target.id;
 
-  switch (actionId) {
-    case "addButton":
-    case "subButton":
-      const number = popInputValue();
-      if (number) {
-        addNumber(number * (actionId === "subButton" ? -1 : 1));
-      }
-      break;
-    case "undoButton":
-      currentIndex -= 1;
-      break;
-    case "redoButton":
-      currentIndex += 1;
-      break;
-    default:
-      break;
+  if (actionId === "addButton" || actionId === "subButton") {
+    const number = popInputValue();
+    if (number) {
+      addNumber(number * (actionId === "subButton" ? -1 : 1));
+    }
+  } else if (actionId === "undoButton") {
+    currentIndex -= 1;
+  } else if (actionId === "redoButton") {
+    currentIndex += 1;
   }
+
   setDisplay();
 }
 
