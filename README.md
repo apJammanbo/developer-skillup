@@ -47,7 +47,8 @@ npm install reset-css
 
 ## TypeScript 적용
 
-### ([React TypeScript](https://create-react-app.dev/docs/adding-typescript/, "CRA TypeScript"))
+https://create-react-app.dev/docs/adding-typescript/
+https://www.typescriptlang.org/docs/handbook/basic-types.html
 
 ## Prettier 적용
 
