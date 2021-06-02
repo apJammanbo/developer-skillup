@@ -40,3 +40,23 @@ npm install reset-css
 ```
 
 리액트로 Counter앱 재작성
+
+## Day 4
+
+### React Life Cycle
+
+## TypeScript 적용
+
+### ([React TypeScript](https://create-react-app.dev/docs/adding-typescript/, "CRA TypeScript"))
+
+## Prettier 적용
+
+https://prettier.io/
+
+## NestJS
+
+https://nestjs.com/
+
+## TypeORM
+
+https://typeorm.io/#/
