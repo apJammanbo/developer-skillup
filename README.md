@@ -65,3 +65,12 @@ https://typeorm.io/#/
 ## NextJS 적용
 
 https://nextjs.org/
+
+## NextJS Netlify 배포
+
+https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/\
+
+## 연락처 앱 추가 기능추가
+
+1. 연락처 등록
+2. 연락처 삭제
