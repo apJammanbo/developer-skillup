@@ -1,5 +1,5 @@
-import LeftBox from "./Home/LeftBox";
-import RightBox from "./Home/RigthBox";
+import LeftBox from "../components/Home/LeftBox";
+import RightBox from "../components/Home/RigthBox";
 
 const Home = () => {
   return (
