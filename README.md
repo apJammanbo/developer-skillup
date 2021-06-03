@@ -61,3 +61,7 @@ https://nestjs.com/
 ## TypeORM
 
 https://typeorm.io/#/
+
+## NextJS 적용
+
+https://nextjs.org/
