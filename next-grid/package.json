@@ -1,5 +1,5 @@
 {
-  "name": "contact-next",
+  "name": "next-grid",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "recoil": "^0.3.1"
+    "luxdatagrid": "http://git.duzon.com/uiux-busan/luxdatagrid2-base.git#2.1.0"
   },
   "devDependencies": {
     "@types/react": "17.0.9",
