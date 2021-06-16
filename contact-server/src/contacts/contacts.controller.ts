@@ -14,9 +14,19 @@ import { Contact } from './entities/contact.entity';
 export class ContactsController {
   constructor(private contactsService: ContactsService) {}
 
+  // @Get()
+  // test(): string {
+  //   return 'Test';
+  // }
+
   @Get()
   async findAll(): Promise<Contact[]> {
     return this.contactsService.findAll();
+  }
+
+  @Get(':id')
+  async findOne(@Param('id') id: number): Promise<Contact> {
+    return this.contactsService.findOne(id);
   }
 
   @Post()

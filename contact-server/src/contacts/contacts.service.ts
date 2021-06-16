@@ -26,17 +26,21 @@ export class ContactsService {
   }
 
   // 연락처를 추가한다.
-  create(name: string, age: number, detail: string) {
-    const contact = {
-      name,
-      detail,
-      age,
-    };
+  create(name: string, age: number, detail: string): Promise<Contact> {
+    const contact = new Contact();
+    contact.name = name;
+    contact.age = age;
+    contact.detail = detail;
     return this.contactRepository.save(contact);
   }
 
   // 연락처를 수정한다.
-  async update(id: number, name: string, age: number, detail: string) {
+  async update(
+    id: number,
+    name: string,
+    age: number,
+    detail: string,
+  ): Promise<Contact> {
     const contact = await this.contactRepository.findOne(id);
     contact.name = name;
     contact.age = age;
